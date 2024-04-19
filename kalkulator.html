@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #2196F3, #00BCD4);
+        }
+        .kalkulator {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #006eff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #6598db;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="kalkulator">
+        <h2>Kalkulator</h2>
+        <div>
+            <p>Angka ke-1: <span id="angka1"></span></p>
+            <p>Operator: <span id="operator"></span></p>
+            <p>Angka ke-2: <span id="angka2"></span></p>
+            <p>Hasil: <span id="hasil"></span></p>
+        </div>
+        <br><button onclick="calculate()">Klik untuk menampilkan kotak kalkulator</button>
+    </div>
+
+    <script src="kalkulator.js"></script>
+</body>
+</html>
